@@ -1,0 +1,177 @@
+body
+{
+    background: rgb(54,54,54);
+    background: linear-gradient(177deg, rgba(54,54,54,1) 0%, rgba(17,17,17,1) 100%);
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: column;
+    min-height: 2000px;
+}
+.nav-bar-logo
+{
+    margin-left: 8vw;
+    margin-right: 2vw;
+}
+.scrolled-nav-bar {
+    background-color: rgba(17,17,17,0.6);
+    transition: 0.3s;
+}
+.navbar:not(.scrolled-nav-bar){
+    background-color: transparent;
+    transition: 0.3s;
+}
+.intro
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 46vw;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+}
+.intro span
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vw;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    align-items: center; 
+    justify-content: center;
+    font-size: x-large;
+    font-family: PT SERIF;
+}
+.intro span h1
+{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.intro span h2
+{
+    font-size: 1.1vw;
+    margin-bottom: 3vw;
+}
+.intro input
+{
+    width: 13%;
+    height: 3vw;
+    background-color: rgba(7, 7, 7, 0.7);
+    border: 0px;
+    color: white;
+    font-family: PT SERIF;
+    font-size: 1.2vw;
+    border-radius: 5px;
+}
+.intro input:hover
+{
+    background-color: rgba(15, 15, 15, 0.7);
+    transition: 0.1s;
+}
+.intro input:not(:hover)
+{
+    background-color: rgba(7, 7, 7, 0.7);
+    transition: 0.1s;
+}
+.under-nav-bar
+{
+    background-color: transparent;
+    min-height: 75px;
+}
+.intro-to-info
+{
+    text-align: center;
+}
+.intro-to-info button
+{
+    width: 100%;
+    height: 8vw;
+    background-color: transparent;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 150px;
+}
+.about
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    min-height: 200px;
+}
+.about h1
+{
+    color: rgb(39, 39, 39);
+    font-size: 3vw;
+    text-align: center;
+    font-family: PT SERIF;
+    padding-top: 3vw;
+}
+.hard-skills
+{
+    display: flex;
+    flex-direction: column;
+}
+.hard-skills-section
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3vw;
+    padding-left: 3.5vw;
+    padding-right: 3vw;
+    gap: 3vw;
+}
+.hard-skills-section img
+{
+    width: 14vw;
+    height: 14vw;
+}
+.card {
+    border-radius: 10px;
+    padding: 2vw;
+    width: 16vw;
+    height: 18vw;
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
+    transition: 0.7s;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+}
+
+.card .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card .card-front,
+.card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-front {
+    transform: rotateY(0deg);
+}
+
+.card .card-back {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg) scale(1.1);
+}
+.card .card-back .card-body {
+    text-align: center;
+    color: #000000; 
+    font-size: 1vw;
+    background-color: white;
+}
