@@ -1,4 +1,12 @@
 var navbar = document.getElementById('navbar');
+
+var firstCard = document.getElementById('firstCard');
+var secondCard = document.getElementById('secondCard');
+var thirdCard = document.getElementById('thirdCard');
+var fourthCard = document.getElementById('fourthCard');
+var fiveCard = document.getElementById('fiveCard');
+var cards = [firstCard,secondCard,thirdCard,fourthCard,fiveCard]
+
 var previousProject = document.getElementById('prevProjBtn');
 var nextProject = document.getElementById('nextProjBtn');
 var projTxt = document.getElementById('projectText')
@@ -16,6 +24,24 @@ window.onscroll = function()
     else 
     {
         navbar.classList.remove('scrolled-nav-bar');
+    }
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350)
+    {
+        cards.forEach(element => 
+            {
+                element.style.opacity = 1;
+            });
+        projectImage.style.opacity = 1;
+        projTxt.style.opacity = 1;
+    }
+    else
+    {
+        cards.forEach(element => 
+            {
+                element.style.opacity = 0;
+            });
+        projectImage.style.opacity = 0;
+        projTxt.style.opacity = 0;
     }
 };
 
