@@ -206,13 +206,28 @@ body
 {
     background-color: transparent;
 }
-.about-projects
-{
+.fade-element {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-text {
+    opacity: 1;
+    transition: color 0.5s ease-in-out;
     justify-content: start;
     background-color: rgb(11, 11, 11);
+    color: white;
+    font-family: PT SERIF;
+    font-size: 1.2vw;
+    padding: 7vw;
     width: 80%;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
+    height: 39vw;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none; /* Чтобы избежать взаимодействия с элементом, который скрыт */
 }
