@@ -232,3 +232,51 @@ body
     opacity: 0;
     pointer-events: none; /* Чтобы избежать взаимодействия с элементом, который скрыт */
 }
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.5);
+    margin-top: 15vw;
+    height: 15vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 2vw;
+    color: rgb(140, 140, 140, 0.5);
+}
+.footer-infos
+{
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+}
+.copyright
+{
+    margin-left: 1vw;
+}
+.footer-infos-col
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    gap: 0.5vw;
+}
+.footer-infos-col a
+{
+    background-color: transparent;
+    border: transparent;
+    color: rgb(140, 140, 140, 0.5);
+    text-align: left;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.footer-infos-col a:hover
+{
+    color: rgb(180, 180, 180);
+
+}
+.footer-logo
+{
+    margin-left: 7.5vw;
+}
