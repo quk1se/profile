@@ -238,8 +238,8 @@ body
     display: flex;
     flex-direction: column;
     background-color: rgb(0,0,0,0.5);
-    margin-top: 15vw;
-    height: 15vw;
+    margin-top: 5vw;
+    height: 100%;
     padding-left: 15vw;
     padding-right: 15vw;
     padding-top: 2vw;
@@ -279,4 +279,49 @@ body
 .footer-logo
 {
     margin-left: 7.5vw;
+}
+.education
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vw; 
+    align-items: center;  
+}
+.education h1
+{
+    color: rgb(170, 170, 170);
+    font-size: 3vw;
+    text-align: center;
+    font-family: PT SERIF;
+    padding-top: 3vw;
+}
+.study
+{
+    display: flex;
+    flex-direction: row;
+    height: 40vw;
+    gap: 5vw;
+    background-color: transparent;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.study-card
+{
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 18vw;
+    height: 28vw;
+    margin: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    border-radius: 10px;
+    font-family: PT SERIF;
+    text-align: center;
+    font-size: 1.2vw;
+    color: rgb(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.22);
 }

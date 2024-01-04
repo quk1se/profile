@@ -14,6 +14,9 @@ var arrProjs = ["iphone1.png","iphone2.png","iphone3.png"]
 var arrTexts = ["Discover the epitome of user-friendly design with our calorie tracker project. Navigating the intricate landscape of nutrition has never been more effortless. Our interface is a harmonious blend of simplicity and functionality, ensuring a seamless experience for users of all levels. Dive into a visually appealing dashboard that transforms complex nutritional data into clear insights. Intuitively log your meals, track your progress, and explore a wealth of nutritional information with a few clicks. Effortlessly empowering your wellness journey, our calorie tracker redefines convenience in the pursuit of a healthier, more balanced lifestyle.","Embark on a transformative health journey with my calorie tracker project. This intuitive tool transcends mere numbers, offering a holistic approach to mindful eating. Seamlessly blending user-friendly design with powerful functionality, our calorie tracker becomes a trusted companion in your wellness quest. Dive into a world where every bite is a conscious choice, and each nutritional detail is elegantly presented. Elevate your health experience with this project — not just a calorie tracker, but a personalized guide on your path to a healthier, more balanced lifestyle.","Presenting my latest weather forecasting project, a streamlined solution tailored to provide users with precise and up-to-date weather predictions for the next 24 hours. Our project focuses on simplicity and accuracy, delivering a one-day forecast with essential details on temperature, precipitation, and atmospheric conditions. With a clean interface and real-time updates, our weather forecasting tool is designed for those who seek quick and reliable insights to plan their day effectively."]
 var projectImage = document.getElementById("projectImage")
 var imageCounter = 2
+
+var study = document.getElementById("study-div");
+
 console.log(navbar)
 window.onscroll = function() 
 {
@@ -43,6 +46,7 @@ window.onscroll = function()
         projectImage.style.opacity = 0;
         projTxt.style.opacity = 0;
     }
+
 };
 
 function anotherProject(button)
