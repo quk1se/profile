@@ -244,6 +244,7 @@ body
     padding-right: 15vw;
     padding-top: 2vw;
     color: rgb(140, 140, 140, 0.5);
+    font-family: PT SERIF;
 }
 .footer-infos
 {
@@ -279,7 +280,7 @@ body
 }
 .footer-logo
 {
-    margin-left: 7.5vw;
+    margin-left: 22.5vw;
 }
 .education
 {
