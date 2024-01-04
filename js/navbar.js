@@ -112,3 +112,8 @@ function toggleElements() {
     element2.style.opacity = 1;
     element2.style.pointerEvents = 'auto';
 }
+
+function contactMe()
+{
+    window.open("contact.html")
+}
